@@ -1,25 +1,32 @@
 * {
   box-sizing: border-box;
 }
+
 .group,
 .app,
 .display,
 .panel {
   display: flex;
 }
+
 .app {
   width: 700px;
   flex-direction: column;
   margin: 15px auto;
 }
+
 .button {
   font-size: 1.7rem;
+  text-align: center;
+  border: 1px solid gray;
 }
-.zero{
+
+.zero {
   width: 50%;
 }
+
 .display {
-  background: #aaaaaa;
+  background: #aaa;
   height: 100px;
   padding: 5px 15px;
   color: white;
@@ -32,10 +39,8 @@
 .panel {
   flex-direction: column;
 }
+
 .panel > * {
   height: 100px;
 }
-.button {
-  text-align: center;
-  border: 1px solid gray;
 }
