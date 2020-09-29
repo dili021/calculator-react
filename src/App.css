@@ -20,9 +20,11 @@
   text-align: center;
   border: 1px solid gray;
 }
+
 .button:focus {
   outline: none;
 }
+
 .zero {
   width: 50%;
 }
