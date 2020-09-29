@@ -1,40 +1,46 @@
+/* eslint-disable react/no-this-in-sfc */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-function ButtonPanel() {
+function ButtonPanel({ handleClick }) {
   return (
     <div className="panel">
       <div className="group group-one">
-        <Button color="lightgray" name="AC" />
-        <Button color="lightgray" name="+/-" />
-        <Button color="lightgray" name="%" />
-        <Button name="÷" />
+        <Button handleClick={handleClick} color="lightgray" name="AC" />
+        <Button handleClick={handleClick} color="lightgray" name="+/-" />
+        <Button handleClick={handleClick} color="lightgray" name="%" />
+        <Button handleClick={handleClick} name="÷" />
       </div>
       <div className="group group-two">
-        <Button color="lightgray" name="7" />
-        <Button color="lightgray" name="8" />
-        <Button color="lightgray" name="9" />
-        <Button name="X" />
+        <Button handleClick={handleClick} color="lightgray" name="7" />
+        <Button handleClick={handleClick} color="lightgray" name="8" />
+        <Button handleClick={handleClick} color="lightgray" name="9" />
+        <Button handleClick={handleClick} name="X" />
       </div>
       <div className="group group-three">
-        <Button color="lightgray" name="4" />
-        <Button color="lightgray" name="5" />
-        <Button color="lightgray" name="6" />
-        <Button name="-" />
+        <Button handleClick={handleClick} color="lightgray" name="4" />
+        <Button handleClick={handleClick} color="lightgray" name="5" />
+        <Button handleClick={handleClick} color="lightgray" name="6" />
+        <Button handleClick={handleClick} name="-" />
       </div>
       <div className="group group-four">
-        <Button color="lightgray" name="1" />
-        <Button color="lightgray" name="2" />
-        <Button color="lightgray" name="3" />
-        <Button name="+" />
+        <Button handleClick={handleClick} color="lightgray" name="1" />
+        <Button handleClick={handleClick} color="lightgray" name="2" />
+        <Button handleClick={handleClick} color="lightgray" name="3" />
+        <Button handleClick={handleClick} name="+" />
       </div>
       <div className="group group-five">
-        <Button color="lightgray" wide name="0" />
-        <Button color="lightgray" name="." />
-        <Button name="=" />
+        <Button handleClick={handleClick} color="lightgray" wide name="0" />
+        <Button handleClick={handleClick} color="lightgray" name="." />
+        <Button handleClick={handleClick} name="=" />
       </div>
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;

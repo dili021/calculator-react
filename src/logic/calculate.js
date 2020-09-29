@@ -35,9 +35,9 @@ function calculate(dataObj, button) {
     }
   } else if (button === '+/-') {
     if (next) {
-      next = operate(next, '-1', 'x');
+      next = operate(next, '-1', 'X');
     } else if (total) {
-      total = operate(total, '-1', 'x');
+      total = operate(total, '-1', 'X');
     }
   } else if (next === null && operation === null && total) {
     next = button;
