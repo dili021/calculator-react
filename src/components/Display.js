@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
-    <h1>
-      {result}
-    </h1>
+    <div className="display">
+      <span style={{ display: 'block' }}>{result}</span>
+    </div>
   );
 }
 
